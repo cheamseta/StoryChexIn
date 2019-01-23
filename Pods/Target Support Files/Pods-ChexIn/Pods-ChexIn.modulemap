@@ -1,0 +1,6 @@
+framework module Pods_ChexIn {
+  umbrella header "Pods-ChexIn-umbrella.h"
+
+  export *
+  module * { export * }
+}
