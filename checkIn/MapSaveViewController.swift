@@ -28,8 +28,6 @@ class MapSaveViewController: ViewController, CLLocationManagerDelegate, UIDocume
     @IBOutlet var mapImageView: UIImageView!
     @IBOutlet var shareView: UIView!
     
-    @IBOutlet var zoomBtn: UIButton!
-
     var locationManager:CLLocationManager!
     
     var initPoint : CGPoint = CGPoint();
@@ -75,11 +73,7 @@ class MapSaveViewController: ViewController, CLLocationManagerDelegate, UIDocume
         self.nameView.layer.cornerRadius = 10;
         self.nameView.layer.borderColor = UIColor.darkGray.cgColor;
         self.nameView.layer.borderWidth = 1;
-        
-        self.zoomBtn.layer.cornerRadius = 20;
-        self.zoomBtn.layer.borderColor = UIColor.darkGray.cgColor;
-        self.zoomBtn.layer.borderWidth = 1;
-        
+
         self.cameraButton.layer.cornerRadius = 20;
         self.cameraButton.layer.borderColor = UIColor.darkGray.cgColor;
         self.cameraButton.layer.borderWidth = 1;
@@ -134,10 +128,7 @@ class MapSaveViewController: ViewController, CLLocationManagerDelegate, UIDocume
         self.geoCoder(location: location);
     }
     
-    @IBAction func zoomAction(_ sender: Any) {
-        
-    }
-    
+ 
     
     func saveImg () -> UIImage {
         
